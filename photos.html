@@ -12,7 +12,6 @@
             background-color: #E398DF;
         }
 
-        
         nav {
             background-color: white;
             padding: 15px;
@@ -23,7 +22,7 @@
         nav a {
             text-decoration: none;
             color: #d63384;
-            margin: 0 20px;
+            margin: 0 15px;
             font-weight: bold;
         }
 
@@ -31,52 +30,54 @@
             border-bottom: 2px solid #d63384;
         }
 
-        /* PAGE TITLE */
         h1 {
             text-align: center;
-            color: #d63384;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
             margin-top: 30px;
             font-size: 2.5rem;
         }
 
         p {
             text-align: center;
-            color: #555;
+            color: white;
             margin-bottom: 40px;
         }
 
-        /* PHOTO GRID */
+        /* GALLERY GRID */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 40px;
-            max-width: 1000px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 20px;
+            max-width: 1100px;
             margin: auto;
         }
 
         .photo {
             background-color: white;
-            border-radius: 15px;
-            overflow: hidden;
+            padding: 10px 10px 20px 10px; /* Creates Polaroid look */
+            border-radius: 5px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.15);
             transition: transform 0.3s;
         }
 
         .photo:hover {
-            transform: scale(1.05);
+            transform: rotate(-2deg) scale(1.05); /* Fun tilt on hover */
         }
 
         .photo img {
             width: 100%;
-            height: 250px;
-            object-fit: cover;
+            height: 300px; /* Fixed height for uniformity */
+            object-fit: cover; /* Prevents stretching */
+            border-radius: 3px;
         }
 
         .caption {
-            padding: 10px;
+            padding-top: 15px;
             text-align: center;
-            font-size: 0.9rem;
+            font-weight: bold;
+            font-size: 1rem;
             color: #d63384;
         }
     </style>
@@ -84,8 +85,7 @@
 
 <body>
 
-    <!-- NAV BAR -->
-   <nav>
+    <nav>
         <a href="index.html">Home</a>
         <a href="photos.html">Our Photos</a>
         <a href="music.html">Music</a>
@@ -93,31 +93,29 @@
         <a href="video.html">Our Video</a>
     </nav>
 
-    <!-- TITLE -->
-    <h1>Our Photos </h1>
+    <h1>Our Photos</h1>
     <p>Lets make more memories love! We just getting started 😘</p>
 
-    <!-- GALLERY -->
     <div class="gallery">
 
         <div class="photo">
-            <img src="photo1.png" alt="19th Birthday Suprise">
+            <img src="photo1.png" alt="First flowers">
             <div class="caption">First flowers hehehe</div>
         </div>
 
         <div class="photo">
-            <img src="photo2.png" alt="Frolics 2025">
-            <div class="caption">ItchyWorms Day! </div>
+            <img src="photo2.png" alt="ItchyWorms Day">
+            <div class="caption">ItchyWorms Day!</div>
         </div>
 
         <div class="photo">
-            <img src="photo3.png" alt="Prom Day">
+            <img src="photo3.png" alt="Prom Date">
             <div class="caption">My Forever Prom Date</div>
         </div>
 
         <div class="photo">
-            <img src="photo4.png" alt="uerm 😅😅😅 ">
-            <div class="caption">W day¿ </div>
+            <img src="photo4.png" alt="W day">
+            <div class="caption">W day¿</div>
         </div>
 
     </div>
