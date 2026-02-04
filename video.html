@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Video 🎬</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background: black;
+            overflow: hidden;
+        }
+
+        /* NAV BAR (FLOATING OVER VIDEO) */
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffccd5;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid #ffccd5;
+        }
+
+        /* FULLSCREEN VIDEO CONTAINER */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* cinematic crop */
+        }
+
+        /* TEXT OVERLAY */
+        .overlay {
+            position: absolute;
+            bottom: 50px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            z-index: 5;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+        }
+
+        .overlay h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        .overlay p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="photos.html">Our Photos</a>
+        <a href="music.html">Music</a>
+        <a href="loveletter.html">Love Letter</a>
+        <a href="video.html">Our Video</a>
+    </nav>
+
+  
+    <div class="video-container">
+        <video autoplay muted loop controls>
+            <source src="ourvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        
+        <div class="overlay">
+            <h1>ThrowBack Lung</h1>
+            <p>I really do love you mahal MWA!</p>
+        </div>
+    </div>
+
+</body>
+</html>
